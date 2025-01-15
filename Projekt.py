@@ -1,4 +1,4 @@
-from Projekt import *
+from Funkcje import *
 
 print('Witamy w sklepie Shop top top') 
 poddział_dział = main_menu()
