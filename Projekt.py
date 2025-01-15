@@ -175,6 +175,8 @@ while zgadza == "nie":
   del koszyk[int(który) - 1]
  else:
   break
+ for i in range(len(koszyk)):
+  print(f"{i + 1}. {koszyk[i]}")
  zgadza = input("czy już wszystko się zgadza ('tak','nie'): ")
 suma = 0
 for i in range(len(koszyk)):
@@ -183,19 +185,21 @@ print("------------")
 print(f"do zapłaty: {suma}")
   
 list = ["karta płatnicza", "PayPal", "Blik", "Bitcoin"]
-płatność = input("jaki chcesz rodzaj płatności:")
 print('')
+print("rodzaje płatności: ")
 for i in range(len(list)):
   print(f"{i + 1}. {list[i]}")
 print('')
+płatność = input("jaki chcesz rodzaj płatności:")
 
 dostawy = ["kurier", "paczkomat", "poczta", "odbiór osobisty"]
-dostawa = input("jaki chcesz rodzaj dostawy: ")
 print('')
+print("rodzaje dostawy:")
 for i in range(len(dostawy)):
   print(f"{i + 1}. {dostawy[i]}")
 print('')
 print(f"rodzaj dostawy: {dostawy[int(dostawa) - 1]}")
+dostawa = input("jaki chcesz rodzaj dostawy: ")
 
 print("-----------")
 Imie = input("podaj imie: ")
