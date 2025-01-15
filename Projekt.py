@@ -24,11 +24,6 @@ while i == "dalej":
     koszyk.append(do_koszyka(produkt))
   elif poddział_dział[0] == "bluzy":
     produkt = product({"bluza czarna z kapturem":100, "bluza biała z kapturem":100, "bluza niebieska z kapturem":100, "bluza czerwona z kapturem":100, "bluza czarna":90, "bluza biała":90, "bluza niebieska":90, "bluza czerwona": 90})
-    produkt = product({"czarne spodnie Sport":60,\
-      "szare spodnie Sport":60"bordowe spodnie Sport":60,\
-      "niebieskie spodnie Sport":60,"czarne spodnie Classic":70,\
-      "szare spodnie Classic":70, "bordowe spodnie Classic":70,\
-      "białe spodnie Classic":80})
     print(produkt)
     rozmiar = size()
     print(f"produkt: {produkt[0]} - ", produkt[1])
@@ -120,7 +115,7 @@ while i == "dalej":
     koszyk.append(do_koszyka(produkt))
   elif poddział_dział[0] == "spodnie":
     produkt = product({"czarne spodnie Sport":60,\
-      "szare spodnie Sport":60"bordowe spodnie Sport":60,\
+      "szare spodnie Sport":60, "bordowe spodnie Sport":60,\
       "niebieskie spodnie Sport":60,"czarne spodnie Classic":70,\
       "szare spodnie Classic":70, "bordowe spodnie Classic":70,\
       "białe spodnie Classic":80})
