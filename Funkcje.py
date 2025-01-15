@@ -28,6 +28,14 @@ def main_menu():
        poddział = sub_section(["obroże", "karma", "zabawki", "ubrania"])
     return poddział, dział
 
+def do_koszyka():
+    x = input("czy chcesz dodać to do koszyka, wpisz 'tak' lub 'nie': ")
+    if x = "tak":
+       koszyk = koszyk + [produkt, rozmiar]
+       return koszyk
+    else:
+       pass
+
 print('Witamy w sklepie Shop top top') 
 poddział_dział = main_menu()
 print(poddział_dział)
