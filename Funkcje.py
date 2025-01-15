@@ -1,6 +1,5 @@
 def product(produkt):
     lista_kluczy = list(produkt.keys())
-    print("------------")
     print("produkty: \n")
     for i in range(len(lista_kluczy)):
      print(f"{i + 1}. {lista_kluczy[i]} - {produkt[lista_kluczy[i]]}")

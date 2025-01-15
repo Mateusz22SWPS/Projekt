@@ -166,11 +166,11 @@ print("------------")
 print(koszyk)
 print("------------")
 czy_się_zgadza = input("czy wszystko sie zgadza w koszyku, wpisz 'tak' lub 'nie': ")
-zgadza = "tak"
-while zgadza == "tak":
+zgadza = "nie"
+while zgadza == "nie":
  if czy_się_zgadza == "nie":
   for i in range(len(koszyk)):
-    print(f"{i}. {koszyk[i]}")
+    print(f"{i + 1}. {koszyk[i]}")
   który = input("który produkt się nie zgadza: ")
   del koszyk[int(który) - 1]
  else:
