@@ -25,7 +25,7 @@ def main_menu():
     if dział == "dział męski" or dział == "dział kobiecy" or dział == "dział dziecięcy":
        poddział = sub_section(["koszulki", "spodnie", "bluzy", "kurtki", "akcesoria"])
     else :
-       poddział = sub_section(["obroże", "karma", "zabawki", "ubrania"])
+       poddział = sub_section(["pies", "kot", "ptaki", "ryby", "gryzonie"])
     return poddział, dział
 
 print('Witamy w sklepie Shop top top') 
