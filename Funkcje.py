@@ -1,12 +1,12 @@
 def product(produkt):
-    print("poddziały: \n" + "\n".join(produkt))
+    print("produkty: \n" + "\n".join(produkt))
     wybór_produktu = input("wybierz produkt: ")
     produkt = produkt[int(wybór_produktu) - 1]
     return produkt
 
 def size():
     rozmiar = ["S", "M", "L", "XL"]
-    print("poddziały: \n" + "\n".join(rozmiar))
+    print("rozmiary: \n" + "\n".join(rozmiar))
     wybór_rozmiaru = input("wybierz rozmiar: ")
     rozmiar = rozmiar[int(wybór_rozmiaru) - 1]
     return rozmiar
@@ -27,6 +27,14 @@ def main_menu():
     else :
        poddział = sub_section(["obroże", "karma", "zabawki", "ubrania"])
     return poddział, dział
+
+def do_koszyka():
+    x = input("czy chcesz dodać to do koszyka, wpisz 'tak' lub 'nie': ")
+    if x = "tak":
+       koszyk = koszyk + [produkt, rozmiar]
+       return koszyk
+    else:
+       pass
 
 print('Witamy w sklepie Shop top top') 
 poddział_dział = main_menu()
