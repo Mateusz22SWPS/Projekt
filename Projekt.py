@@ -198,7 +198,6 @@ print("rodzaje dostawy:")
 for i in range(len(dostawy)):
   print(f"{i + 1}. {dostawy[i]}")
 print('')
-print(f"rodzaj dostawy: {dostawy[int(dostawa) - 1]}")
 dostawa = input("jaki chcesz rodzaj dostawy: ")
 
 print("-----------")
