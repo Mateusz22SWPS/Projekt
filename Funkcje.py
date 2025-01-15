@@ -1,12 +1,12 @@
 def product(produkt):
-    print("poddziały: \n" + "\n".join(produkt))
+    print("produkty: \n" + "\n".join(produkt))
     wybór_produktu = input("wybierz produkt: ")
     produkt = produkt[int(wybór_produktu) - 1]
     return produkt
 
 def size():
     rozmiar = ["S", "M", "L", "XL"]
-    print("poddziały: \n" + "\n".join(rozmiar))
+    print("rozmiary: \n" + "\n".join(rozmiar))
     wybór_rozmiaru = input("wybierz rozmiar: ")
     rozmiar = rozmiar[int(wybór_rozmiaru) - 1]
     return rozmiar
