@@ -2,7 +2,6 @@ from Funkcje import *
 
 koszyk = []
 print('Witamy w sklepie Shop top top') 
-<<<<<<< HEAD
 i = "dalej"
 koszyk = []
 while i == "dalej":
@@ -11,26 +10,12 @@ while i == "dalej":
   if poddział_dział[0] == "koszulki":
     produkt = product({"czarana koszulka": 50, "niebieska koszulka": 50, "koszulka polo czarna": 70, "koszulka w paski": 55, "bordowa koszulka": 50, "niebieska koszulka polo": 70, "zielona koszulka polo":70, "czaran koszula":90, "biała koszula":90})
     print(produkt)
-=======
-poddział_dział = main_menu()
-print(poddział_dział)
-if poddział_dział[1] == "dział męski":
-  if poddział_dział[0] == "koszulki"
-elif poddział_dział[1] == "dział kobiecy":
-  if poddział_dział[0] == "bluzy":
-    produkt = product({"biała bluza":70, "białą bluza z zamkiem":90,\
-     "czarna bluza":70, "czarna bluza z zamkiem":90, "niebieska bluza":70,\
-     "niebieska bluza z zamkiem":90, "bordowa bluza":80,\
-     "bordowa bluza z zamkiem":100})
-     print(produkt)
->>>>>>> Kateryna
     rozmiar = size()
     print(f"produkt: {produkt[0]} - ", produkt[1])
     print("rozmiar: ", rozmiar)
     produkt.append(rozmiar)
     koszyk.append(do_koszyka(produkt))
   elif poddział_dział[0] == "spodnie":
-<<<<<<< HEAD
     produkt = product({"jeansy czarne":70, "jeansy czarne z przetarciami":80, "jeansy granatowe":70, "jeansy granatowe z przetarciami":80, "jeansy białe":70, "jeansy białe z przetarciami":80, "jeansy jasne niebieskie":70, "jeansy jasne niebieskie z przetarciami": 80})
     print(produkt)
     rozmiar = size()
@@ -39,13 +24,11 @@ elif poddział_dział[1] == "dział kobiecy":
     koszyk.append(do_koszyka(produkt))
   elif poddział_dział[0] == "bluzy":
     produkt = product({"bluza czarna z kapturem":100, "bluza biała z kapturem":100, "bluza niebieska z kapturem":100, "bluza czerwona z kapturem":100, "bluza czarna":90, "bluza biała":90, "bluza niebieska":90, "bluza czerwona": 90})
-=======
     produkt = product({"czarne spodnie Sport":60,\
       "szare spodnie Sport":60"bordowe spodnie Sport":60,\
       "niebieskie spodnie Sport":60,"czarne spodnie Classic":70,\
       "szare spodnie Classic":70, "bordowe spodnie Classic":70,\
       "białe spodnie Classic":80})
->>>>>>> Kateryna
     print(produkt)
     rozmiar = size()
     print(f"produkt: {produkt[0]} - ", produkt[1])
@@ -53,7 +36,6 @@ elif poddział_dział[1] == "dział kobiecy":
     produkt.append(rozmiar)
     koszyk.append(do_koszyka(produkt))
   elif poddział_dział[0] == "kurtki":
-<<<<<<< HEAD
     produkt = product({"kurtka zimowa czarna":120, "kurtka zimowa biła":120, "kurtka jesienna czarna":100, "kurtka jesienna biała":100, "płaszcz brązowy":120, "płaszcz czarny":120, "płaszcz zimowy czarny":140, "płaszcz zimowy brązowy":140})
     print(produkt)
     rozmiar = size()
@@ -124,31 +106,31 @@ elif poddział_dział[1] == "dział kobiecy":
     produkt = product ({"płatki grochu 250g": 15, "płatki grochu 500ml": 25, "klatka mała": 35, "klatka duża": 50, "bela siana 250g": 20, "bela siana 500g": 30, "domek z siana": 25, "tunel z siana": 15, "koło do biegania": 20}) 
     print(f"produkt: {produkt[0]} - ", produkt[1]) 
     koszyk.append(do_koszyka(produkt)) 
-
- i = input("jeśli chcesz kupować dalej wpisz: 'dalej', jeśli chcesz przejść do koszyka wpisz 'koszyk': ")
-
-koszyk = [x for x in koszyk if x is not None]
-print("------------")
-print(koszyk)
-print("------------")
-czy_się_zgadza = input("czy wszystko sie zgadza w koszyku, wpisz 'tak' lub 'nie': ")
-zgadza = "tak"
-while zgadza == "tak":
- if czy_się_zgadza == "nie":
-  for i in range(len(koszyk)):
-    print(f"{i}. {koszyk[i]}")
-  który = input("który produkt się nie zgadza: ")
-  del koszyk[int(który) - 1]
- else:
-  break
- zgadza = input("czy już wszystko się zgadza ('tak','nie'): ")
-suma = 0
-for i in range(len(koszyk)):
-   suma = suma + koszyk[i][1]
-print("------------")
-print(f"do zapłaty: {suma}")
-  
-=======
+ elif poddział_dział[1] == "dział kobiecy":
+  if poddział_dział[0] == "bluzy":
+    produkt = product({"biała bluza":70, "białą bluza z zamkiem":90,\
+     "czarna bluza":70, "czarna bluza z zamkiem":90, "niebieska bluza":70,\
+     "niebieska bluza z zamkiem":90, "bordowa bluza":80,\
+     "bordowa bluza z zamkiem":100})
+    print(produkt)
+    rozmiar = size()
+    print(f"produkt: {produkt[0]} - ", produkt[1])
+    print("rozmiar: ", rozmiar)
+    produkt.append(rozmiar)
+    koszyk.append(do_koszyka(produkt))
+  elif poddział_dział[0] == "spodnie":
+    produkt = product({"czarne spodnie Sport":60,\
+      "szare spodnie Sport":60"bordowe spodnie Sport":60,\
+      "niebieskie spodnie Sport":60,"czarne spodnie Classic":70,\
+      "szare spodnie Classic":70, "bordowe spodnie Classic":70,\
+      "białe spodnie Classic":80})
+    print(produkt)
+    rozmiar = size()
+    print(f"produkt: {produkt[0]} - ", produkt[1])
+    print("rozmiar: ", rozmiar)
+    produkt.append(rozmiar)
+    koszyk.append(do_koszyka(produkt))
+  elif poddział_dział[0] == "kurtki":
     produkt == product({"biała kurtka Short":220, \
       "czarna kurtka Short":220, "bordo kurtka Short":220, \
       "biała kurtka Long":290, "czarna kurtka Long":290,\
@@ -181,4 +163,59 @@ print(f"do zapłaty: {suma}")
    print(produkt)
    print(f"produkt: {produkt[0]} - ", produkt[1])
    koszyk.append(do_koszyka(produkt))
->>>>>>> Kateryna
+
+ i = input("jeśli chcesz kupować dalej wpisz: 'dalej', jeśli chcesz przejść do koszyka wpisz 'koszyk': ")
+
+koszyk = [x for x in koszyk if x is not None]
+print("------------")
+print(koszyk)
+print("------------")
+czy_się_zgadza = input("czy wszystko sie zgadza w koszyku, wpisz 'tak' lub 'nie': ")
+zgadza = "tak"
+while zgadza == "tak":
+ if czy_się_zgadza == "nie":
+  for i in range(len(koszyk)):
+    print(f"{i}. {koszyk[i]}")
+  który = input("który produkt się nie zgadza: ")
+  del koszyk[int(który) - 1]
+ else:
+  break
+ zgadza = input("czy już wszystko się zgadza ('tak','nie'): ")
+suma = 0
+for i in range(len(koszyk)):
+   suma = suma + koszyk[i][1]
+print("------------")
+print(f"do zapłaty: {suma}")
+  
+list = ["karta płatnicza", "PayPal", "Blik", "Bitcoin"]
+płatność = input("jaki chcesz rodzaj płatności:")
+print('')
+for i in range(len(list)):
+  print(f"{i + 1}. {list[i]}")
+print('')
+
+dostawy = ["kurier", "paczkomat", "poczta", "odbiór osobisty"]
+dostawa = input("jaki chcesz rodzaj dostawy: ")
+print('')
+for i in range(len(dostawy)):
+  print(f"{i + 1}. {dostawy[i]}")
+print('')
+print(f"rodzaj dostawy: {dostawy[int(dostawa) - 1]}")
+
+print("-----------")
+Imie = input("podaj imie: ")
+Nazwisko = input("podaj nazwisko: ")
+Nr_telefonu = input("podaj nr telefonu: ")
+Ulica = input("podaj ulicę: ")
+Nr_domu = input("podaj nr domu: ")
+Miasto = input("podaj miasto zamieszkania: ")
+Kod_pocztowy = input("podaj kod pocztowy: ")
+Nr_mieszkania = input("podaj nr mieszkania: ")
+print("-------------")
+print('')
+print("Podsumowanie zamówienia:")
+print(f"koszyk: {koszyk}" + "\n" + f"do zapłaty: {suma}zł" + \
+      "\n" + f"metoda płatności: {list[int(płatność) - 1]}" + "\n" + f"rodzaj dostawy: {dostawy[int(dostawa) - 1]}" + \
+      "\n" + "dane do wysyłki: " + "\n" + f"Imie: {Imie}" + "\n" + f"Nazwisko: {Nazwisko}" +\
+      "\n" + f"numer telefonu: {Nr_telefonu}" + "\n" + f"Ulica: {Ulica}" + '\n' + f"Numer domu: {Nr_domu}" +\
+      "\n" + f"numer mieszkania: {Nr_mieszkania}"+ "\n" + f"Miasto: {Miasto}" + "\n" + f"Kod pocztowy: {Kod_pocztowy}")
